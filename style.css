@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5f8;
+  color: #5a2d3a;
+}
+
+/* ===== NAV ===== */
+nav {
+  background-color: #fff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(232, 84, 122, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #e8547a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5a2d3a;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  color: #e8547a;
+}
+
+/* ===== HERO ===== */
+#inicio {
+  background: linear-gradient(135deg, #fff0f5, #fde8ee);
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  min-height: 90vh;
+}
+
+.hero-texto h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: #e8547a;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-texto p {
+  font-size: 1rem;
+  color: #7a4a5e;
+  max-width: 420px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.btn-rosa {
+  background-color: #e8547a;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-rosa:hover {
+  background-color: #c43060;
+}
+
+/* Moldura redonda da mãe */
+.foto-mae-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.foto-mae {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 5px solid #e8547a;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(232, 84, 122, 0.3);
+}
+
+.foto-mae img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nome-mae {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: #e8547a;
+  text-align: center;
+}
+
+/* ===== TÍTULOS DAS SEÇÕES ===== */
+.titulo-secao {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  color: #e8547a;
+  margin-bottom: 10px;
+}
+
+.linha-decorativa {
+  width: 60px;
+  height: 3px;
+  background-color: #e8547a;
+  margin: 0 auto 40px;
+  border-radius: 5px;
+}
+
+/* ===== SOBRE ===== */
+#sobre {
+  background-color: #fff;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.sobre-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sobre-texto {
+  max-width: 420px;
+  text-align: left;
+}
+
+.sobre-texto p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #6a4257;
+}
+
+.cards-qualidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: #fff5f8;
+  border: 1px solid #f3c8d2;
+  border-radius: 15px;
+  padding: 20px 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icone {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #5a2d3a;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ===== GALERIA ===== */
+#galeria {
+  background-color: #fff5f8;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.galeria-grid img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #f7a8bc;
+}
+
+/* ===== APRENDIZADOS ===== */
+#aprendizados {
+  background: linear-gradient(135deg, #e8547a, #c43060);
+  padding: 70px 40px;
+  text-align: center;
+}
+
+#aprendizados .titulo-secao {
+  color: #fff;
+}
+
+#aprendizados .linha-decorativa {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.aprendizados-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.item-aprendizado {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 18px;
+  padding: 25px 20px;
+  width: 160px;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.item-aprendizado:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+}
+
+.item-aprendizado .icone {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.item-aprendizado p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ===== MENSAGEM ===== */
+#mensagem {
+  background-color: #fff;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.mensagem-box {
+  background-color: #fff5f8;
+  border: 1px solid #f3c8d2;
+  border-radius: 20px;
+  padding: 35px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mensagem-box textarea {
+  width: 100%;
+  min-height: 140px;
+  border: 1px solid #f3c8d2;
+  border-radius: 12px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #5a2d3a;
+  resize: vertical;
+  outline: none;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.mensagem-box textarea:focus {
+  border-color: #e8547a;
+}
+
+/* ===== FAMÍLIA ===== */
+#familia {
+  background-color: #fff5f8;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.familia-descricao {
+  font-size: 0.95rem;
+  color: #7a4a5e;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.foto-familia-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.foto-familia-container img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid #f7a8bc;
+}
+
+/* ===== FRASE FINAL ===== */
+#frase-final {
+  background: linear-gradient(135deg, #fff0f5, #fde8ee);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+#frase-final blockquote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #5a2d3a;
+  max-width: 700px;
+  margin: 0 auto 15px;
+  line-height: 1.5;
+}
+
+#frase-final .credito {
+  color: #e8547a;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #5a2d3a;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer .logo {
+  color: #f7a8bc;
+}
+
+footer p {
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #inicio {
+    padding: 50px 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .hero-texto h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-texto p {
+    margin: 0 auto 25px;
+  }
+
+  .foto-mae {
+    width: 220px;
+    height: 220px;
+  }
+
+  #sobre,
+  #galeria,
+  #aprendizados,
+  #mensagem,
+  #familia,
+  #frase-final {
+    padding: 50px 20px;
+  }
+
+  .sobre-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-texto {
+    text-align: center;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-texto h1 {
+    font-size: 2rem;
+  }
+
+  .cards-qualidades {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #frase-final blockquote {
+    font-size: 1.5rem;
+  }
+}
