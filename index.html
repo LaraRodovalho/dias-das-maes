@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia das Mães 💗</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="logo">Dia das Mães 💗</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#mensagem">Mensagem</a></li>
+      <li><a href="#familia">Família</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio">
+
+    <div class="hero-texto">
+      <h1>Minha mãe,<br>minha inspiração 🌸</h1>
+      <p>Uma homenagem a quem me ensinou o verdadeiro significado do amor. Obrigado por tudo, mãe! 💗</p>
+      <a href="#sobre" class="btn-rosa">Ver homenagem 💗</a>
+    </div>
+
+    <div class="foto-mae-container">
+      <!-- FOTO DA MÃE: coloque o link da imagem no src abaixo -->
+      <div class="foto-mae">
+        <img src="lara3.jfif" alt="Foto da minha mãe">
+      </div>
+      <div class="nome-mae">Minha Mãe 💗</div>
+    </div>
+
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre">
+
+    <h2 class="titulo-secao">Sobre minha mãe 🤍</h2>
+    <div class="linha-decorativa"></div>
+
+    <div class="sobre-grid">
+
+      <div class="sobre-texto">
+        <p>
+          Ela é guerreira, dedicada, carinhosa e a pessoa que sempre acreditou em mim mesmo quando eu duvidei.
+          Com seu exemplo, me ensinou valores que levarei para toda a vida.
+          <br><br>
+          Essa página é apenas uma pequena forma de agradecer por tudo que ela faz por mim.
+          Mãe, te amo hoje e sempre! 💗
+        </p>
+      </div>
+
+      <div class="cards-qualidades">
+        <div class="card">
+          <div class="icone">💗</div>
+          <p>Seu amor me fortalece todos os dias</p>
+        </div>
+        <div class="card">
+          <div class="icone">⭐</div>
+          <p>Seu exemplo me guia sempre</p>
+        </div>
+        <div class="card">
+          <div class="icone">🌸</div>
+          <p>Sua bondade transforma o mundo</p>
+        </div>
+        <div class="card">
+          <div class="icone">👑</div>
+          <p>Minha rainha e maior inspiração</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section id="galeria">
+
+    <h2 class="titulo-secao">Nossos momentos 📸</h2>
+    <div class="linha-decorativa"></div>
+
+    <div class="galeria-grid">
+      <!-- GALERIA: coloque os links das fotos nos src abaixo -->
+      <img src="lara1.jfif" alt="Momento 1">
+      <img src="lara4.jfif" alt="Momento 2">
+      <img src="lara5.jfif" alt="Momento 3">
+      <img src="lara6.jfif" alt="Momento 4">
+      <img src="lara7.jfif"Momento 5">
+      <img src="lara8.jfif" alt="Momento 6">
+    </div>
+
+  </section>
+
+  <!-- ===== APRENDIZADOS ===== -->
+  <section id="aprendizados">
+
+    <h2 class="titulo-secao">Coisas que aprendi com ela 🤍</h2>
+    <div class="linha-decorativa"></div>
+
+    <div class="aprendizados-grid">
+      <div class="item-aprendizado">
+        <div class="icone">💬</div>
+        <p>A importância de ser gentil sempre</p>
+      </div>
+      <div class="item-aprendizado">
+        <div class="icone">📚</div>
+        <p>Nunca desistir dos meus sonhos</p>
+      </div>
+      <div class="item-aprendizado">
+        <div class="icone">🤝</div>
+        <p>A cuidar de quem eu amo</p>
+      </div>
+      <div class="item-aprendizado">
+        <div class="icone">☀️</div>
+        <p>A ver o lado bom da vida</p>
+      </div>
+      <div class="item-aprendizado">
+        <div class="icone">💗</div>
+        <p>Que o amor tudo pode vencer</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== MENSAGEM ===== -->
+  <section id="mensagem">
+
+    <h2 class="titulo-secao">Uma mensagem para você 🤍</h2>
+    <div class="linha-decorativa"></div>
+
+    <div class="mensagem-box">
+      <textarea id="textMensagem" placeholder="Escreva aqui sua mensagem especial para sua mãe...
+
+Ex: Obrigada por cada palavra, cada abraço e cada conselho. Te amo hoje e sempre! 💗"></textarea>
+      <button class="btn-rosa" onclick="salvarMensagem()">Salvar mensagem 💗</button>
+      <p id="avisoSalvo" style="margin-top:12px; color:#e8547a; font-size:0.85rem; display:none">
+        ✅ Mensagem salva!
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ===== FAMÍLIA ===== -->
+  <section id="familia">
+
+    <h2 class="titulo-secao">Nossa família 🏡</h2>
+    <div class="linha-decorativa"></div>
+    <p class="familia-descricao">Um espaço especial para guardar a memória mais preciosa com a sua família. 💗</p>
+
+    <div class="foto-familia-container">
+      <!-- FOTO DA FAMÍLIA: coloque o link da imagem no src abaixo -->
+      <img src="lara2.jfif" alt="Foto da família">
+    </div>
+
+  </section>
+
+  <!-- ===== FRASE FINAL ===== -->
+  <section id="frase-final">
+    <blockquote>"Mãe, você é meu lar, meu abrigo e meu maior exemplo de amor." 🌸</blockquote>
+    <p class="credito">Feliz Dia das Mães! 💗</p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="logo">Dia das Mães 💗</div>
+    <p>Feito com amor por sua filha</p>
+    <p>2026</p>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="script.js"></script>
+
+</body>
+</html>
